@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Bank Card UI</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #E3F2FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Card Container */
+.card {
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right, #0D47A1, #1976D2);
+    box-shadow: 0 6px 10px rgba(0,0,0,0.2);
+    position: relative;
+    overflow: hidden;
+    padding: 20px;
+    color: white;
+}
+
+/* Decorative Circles */
+.circle1 {
+    position: absolute;
+    top: -30px;
+    right: -30px;
+    width: 120px;
+    height: 120px;
+    background: rgba(255,255,255,0.1);
+    border-radius: 50%;
+}
+
+.circle2 {
+    position: absolute;
+    bottom: -20px;
+    left: -20px;
+    width: 100px;
+    height: 100px;
+    background: rgba(255,255,255,0.08);
+    border-radius: 50%;
+}
+
+/* Top Row */
+.top-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.bank-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Card Number */
+.card-number {
+    font-size: 22px;
+    letter-spacing: 2.5px;
+    margin: 20px 0;
+}
+
+/* Bottom Section */
+.bottom-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.label {
+    font-size: 12px;
+    color: rgba(255,255,255,0.7);
+}
+
+.value {
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+/* Chip Image */
+.chip {
+    width: 40px;
+    height: 30px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+    <div class="circle1"></div>
+    <div class="circle2"></div>
+
+    <div class="top-row">
+        <div class="bank-name">Chase bank</div>
+        <img src="images/chip.png" class="chip" alt="chip">
+    </div>
+
+    <div class="card-number">**** **** **** 6543</div>
+
+    <div class="bottom-row">
+        <div>
+            <div class="label">CARD HOLDER</div>
+            <div class="value">Akhila Abraham</div>
+        </div>
+
+        <div>
+            <div class="label">EXPIRES</div>
+            <div class="value">06/30</div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
